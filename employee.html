@@ -1,0 +1,234 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+<title>Web Design & Development Course</title> 
+<link rel="stylesheet" href="index.css" /> 
+  <style>
+main {
+  max-width: 900px;
+  margin: 50px auto 30px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #f27405;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.search-bar input[type="text"] {
+  width: 280px;
+  padding: 7px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  padding: 8px 18px;
+  font-size: 14px;
+  background-color: #f27405;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #d15e00;
+}
+
+table {
+  width: 80%; /* further reduced width */
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 14px; /* smaller font */
+}
+
+th, td {
+  padding: 8px 10px; /* smaller padding */
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #f27405;
+  color: white;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: aquamarine;
+  cursor: pointer;
+}
+
+.containerbox {
+  padding: 10px 20px;
+}
+
+/* Style for Edit and Delete buttons */
+button.edit, button.delete {
+  font-size: 14px; /* same font size */
+  background-color: #f27405; /* orange background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 12px;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.edit:hover, button.delete:hover {
+  background-color: #d15e00;
+}
+  </style>
+</head> 
+
+<body>
+  <div class="container">
+    <header>
+      <div class="logo-container">
+        <img src="./assets/img/woodlogo.jpg" alt="WOODY Logo" class="logo" />
+        <div class="logo-text">WOODY</div>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="employee.html">Employee</a></li>
+          <li><a href="orders.html">Orders</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="setting.html">Settings</a></li>
+        </ul>
+      </nav>
+      <button class="search">Search</button>
+    </header> 
+<div class="containerbox"> 
+<h1>Employee Details</h1> 
+<!-- Search Bar --> 
+<div class="search-bar"> 
+<input type="text" id="search" placeholder="Search employees..." /> 
+<button onclick="searchEmployee()">Search</button> 
+</div> 
+<!-- Employee Table --> 
+
+<table>
+    <thead>
+        <tr>
+            <th>Employee Name</th> 
+            <th>Role</th> 
+            <th>Department</th> 
+            <th>Email</th> 
+            <th>Contact</th> 
+            <th>Actions</th> 
+        </tr>
+    </thead>
+<tbody> 
+<tr> 
+<td>1</td> 
+<td>John Doe</td> 
+<td>Production Manager</td> 
+<td>Manufacturing</td> 
+<td>john.doe@example.com</td> 
+<td>9943177416</td> 
+<td> 
+<button class="edit">Edit</button> 
+<button class="delete">Delete</button> 
+</td> 
+</tr> 
+<tr> 
+<td>2</td> 
+<td>Jane Smith</td> 
+<td>Quality Inspector</td> 
+<td>Quality Control</td> 
+<td>jane.smith@example.com</td> 
+<td>9626079262</td> 
+<td> 
+<button class="edit">Edit</button> 
+<button class="delete">Delete</button> 
+</td> 
+</tr> 
+<tr> 
+<td>3</td> 
+<td>kailash</td> 
+<td>Supervisor</td> 
+<td>Manufacturing</td> 
+<td>kailash.123@example.com</td> 
+<td>8056753351</td> 
+<td> 
+<button class="edit">Edit</button> 
+<button class="delete">Delete</button> 
+</td> 
+</tr> 
+<tr> 
+<td>4</td> 
+<td>John kennedy</td> 
+<td>General manager</td> 
+<td>Marketing</td> 
+<td>john.kennady@example.com</td> 
+<td>8072056782</td> 
+<td> 
+<button class="edit">Edit</button> 
+<button class="delete">Delete</button> 
+</td> 
+</tr> 
+<tr>
+    <td>5</td> 
+<td>Sidhhu</td> 
+<td>Employee</td> 
+<td>Manufacturing</td> 
+<td>sidhhu.90@example.com</td> 
+<td>9500839006</td> 
+<td> 
+<button class="edit">Edit</button> 
+<button class="delete">Delete</button> 
+</td> 
+</tr> 
+<tr> 
+<td>6</td> 
+<td>Arjun</td> 
+<td>Production Manager</td> 
+<td>Manufacturing</td> 
+<td>arjun.09e@example.com</td> 
+<td>8668074243</td> 
+<td> 
+<button class="edit">Edit</button> 
+<button class="delete">Delete</button> 
+</td> 
+</tr> 
+<tr> 
+<td>7</td> 
+<td>Lara</td> 
+<td>Sales executive</td> 
+<td>Sales</td> 
+<td>lara.091@example.com</td> 
+<td>9003489641</td> 
+<td> 
+<button class="edit">Edit</button> 
+<button class="delete">Delete</button> 
+</td> 
+</tr> 
+<!-- Additional rows can be added here --> 
+</tbody> 
+</table> 
+</div> 
+</div> 
+</body> 
+</html>
